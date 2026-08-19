@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">PrizePilot Agent architecture</title>
+  <desc id="desc">Opportunity rules and owner evidence enter a deterministic gate. Eligible work is handled by Google ADK or Strands, then reviewed by a human before any external action.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07120f"/><stop offset="1" stop-color="#0b211a"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#70e8b8"/></marker>
+    <style>
+      .box{fill:#0f2a21;stroke:#2f6b56;stroke-width:2}.gate{fill:#163f32;stroke:#70e8b8;stroke-width:3}.warn{fill:#3a2b19;stroke:#ffd166;stroke-width:2}.stop{fill:#351c22;stroke:#ff7d90;stroke-width:2}.title{fill:#effff7;font:700 30px Inter,Arial,sans-serif}.copy{fill:#a7c6ba;font:22px Inter,Arial,sans-serif}.small{fill:#70e8b8;font:700 17px Inter,Arial,sans-serif;letter-spacing:2px}.line{stroke:#70e8b8;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="90" y="88" class="small">APPROVAL-FIRST AUTONOMY</text>
+  <text x="90" y="142" class="title" font-size="48">PrizePilot Agent</text>
+  <rect x="90" y="250" width="300" height="140" rx="24" class="box"/>
+  <text x="125" y="302" class="title">Opportunity rules</text><text x="125" y="342" class="copy">Deadlines · hard gates</text><text x="125" y="374" class="copy">required stack · prizes</text>
+  <rect x="90" y="500" width="300" height="140" rx="24" class="box"/>
+  <text x="125" y="552" class="title">Owner evidence</text><text x="125" y="592" class="copy">Verified facts · artifacts</text><text x="125" y="624" class="copy">explicit unknowns</text>
+  <rect x="520" y="345" width="330" height="190" rx="28" class="gate"/>
+  <text x="560" y="405" class="small">DETERMINISTIC</text><text x="560" y="451" class="title">Eligibility gate</text><text x="560" y="492" class="copy">Unknown ≠ eligible</text>
+  <rect x="980" y="170" width="350" height="140" rx="24" class="box"/>
+  <text x="1020" y="222" class="title">Google build</text><text x="1020" y="262" class="copy">Gemini · ADK · Cloud Run</text>
+  <rect x="980" y="390" width="350" height="140" rx="24" class="box"/>
+  <text x="1020" y="442" class="title">AWS build</text><text x="1020" y="482" class="copy">Strands · optional AgentCore</text>
+  <rect x="980" y="620" width="350" height="140" rx="24" class="gate"/>
+  <text x="1020" y="672" class="title">Human approval</text><text x="1020" y="712" class="copy">Exact data · destination · action</text>
+  <rect x="520" y="660" width="330" height="120" rx="24" class="warn"/>
+  <text x="560" y="710" class="title">Evidence queue</text><text x="560" y="750" class="copy">Only real owner decisions</text>
+  <rect x="1370" y="620" width="170" height="140" rx="24" class="box"/>
+  <text x="1402" y="674" class="title">Action</text><text x="1402" y="714" class="copy">+ audit log</text>
+  <rect x="520" y="140" width="330" height="120" rx="24" class="stop"/>
+  <text x="560" y="190" class="title">Safe block</text><text x="560" y="230" class="copy">Reason recorded</text>
+  <path d="M390 320 C455 320 470 390 520 410" class="line"/><path d="M390 570 C455 570 470 500 520 475" class="line"/>
+  <path d="M850 400 C915 350 920 270 980 250" class="line"/><path d="M850 455 C915 455 920 455 980 455" class="line"/>
+  <path d="M850 495 C910 545 920 680 980 680" class="line"/><path d="M850 500 C870 590 820 690 850 710" class="line"/>
+  <path d="M685 345 L685 260" class="line"/><path d="M1330 690 L1370 690" class="line"/>
+</svg>
+
