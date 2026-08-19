@@ -1,0 +1,2 @@
+"""PrizePilot Agent application package."""
+
