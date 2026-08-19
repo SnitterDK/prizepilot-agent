@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrizePilot Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">APPROVAL-FIRST AUTONOMY</p>
+        <h1>PrizePilot Agent</h1>
+        <p class="lede">
+          Turn a portfolio into eligible, evidence-backed applications—without
+          inventing claims or losing control of the final submit button.
+        </p>
+      </header>
+
+      <section class="metrics" aria-label="Overview">
+        <article><strong>2</strong><span>cash competitions mapped</span></article>
+        <article><strong>$220k</strong><span>verified prize pools</span></article>
+        <article><strong>0</strong><span>unsupported claims</span></article>
+      </section>
+
+      <section class="panel">
+        <div>
+          <p class="eyebrow">LIVE ELIGIBILITY GATE</p>
+          <h2>One queue. Only real decisions.</h2>
+        </div>
+        <button id="run">Run agent</button>
+      </section>
+
+      <section id="queue" class="queue" aria-live="polite">
+        <p class="empty">Run the agent to evaluate the sample opportunity set.</p>
+      </section>
+
+      <footer>
+        <span>Gemini + Google ADK + Google Cloud</span>
+        <span>Strands Agents SDK + AWS</span>
+        <span>Human approval before transmission</span>
+      </footer>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
